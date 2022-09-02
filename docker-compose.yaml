@@ -4,7 +4,6 @@ services:
     environment:
       STRAPI_TOKEN: foo
       STRAPI_API_URL: http://localhost:1337
-
     ports:
       - "8000:8000"
     depends_on:
