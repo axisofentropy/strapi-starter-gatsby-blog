@@ -8,7 +8,7 @@ services:
     image: "${BACKEND_IMAGE}"
     environment:
       DATABASE_CLIENT: postgres
-      DATABASE_HOST: db
+      DATABASE_HOST: 127.0.0.1
       DATABASE_PORT: 5432
       DATABASE_NAME: strapi
       DATABASE_USERNAME: strapi
