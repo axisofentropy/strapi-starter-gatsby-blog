@@ -7,8 +7,11 @@ services:
   backend:
     image: "${BACKEND_IMAGE}"
     environment:
+      APP_KEYS: YQlBKjXGY1N2d4ENFjhz+w==,VL3M3/HGO61z4NcBa64gvA==,z5d3pvSOrWv2MIaSy2y75A==,O/wm+8s3XWK2kububsf+nw==
+      API_TOKEN_SALT: TIHPKNasCQ5eLjEUKyrsEg==
+      ADMIN_JWT_SECRET: SccxKZkPuyH+2QFas8Esfw==
       DATABASE_CLIENT: postgres
-      DATABASE_HOST: db
+      DATABASE_HOST: 127.0.0.1
       DATABASE_PORT: 5432
       DATABASE_NAME: strapi
       DATABASE_USERNAME: strapi
